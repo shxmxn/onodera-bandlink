@@ -11,32 +11,32 @@ const socialLinks: Array<ISocialLink> = [
     {
         icon: vk,
         label: 'shxmxn',
-        url: '',
+        url: 'https://vk.com/shxmxn',
     },
     {
         icon: inst,
         label: 'shxmxn',
-        url: '',
+        url: 'https://www.instagram.com/shxmxn.online/',
     },
     {
         icon: vk,
         label: 'Oki Doki Rec',
-        url: '',
+        url: 'https://vk.com/okidokirec',
     },
     {
         icon: inst,
         label: 'Oki Doki Rec',
-        url: '',
+        url: 'https://www.instagram.com/okidokirec/',
     },
     {
         icon: vk,
         label: 'Onodera',
-        url: '',
+        url: 'https://vk.com/onodera.whaaa',
     },
     {
         icon: inst,
         label: 'Onodera',
-        url: '',
+        url: 'https://www.instagram.com/onodera_whaaa/',
     },
 ];
 

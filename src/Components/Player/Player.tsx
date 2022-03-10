@@ -8,7 +8,7 @@ const Player: React.FC = () => {
     return (
         <div className="Player">
             <div className="Player-label">слушать</div>
-            <a className="Player-controls" href="/" rel="noreferrer" target="_blank">
+            <a className="Player-controls" href="https://t.me/shxmxn_bot" rel="noreferrer" target="_blank">
                 <Prev />
                 <div className="Player-circle">
                     <img src={telegram} alt="icon" />
