@@ -23,15 +23,33 @@ a {
 
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+
+  @include mobile-portrait {
+    padding: mvh(60) mvw(43);
+    flex-direction: column;
+    justify-content: unset;
+  }
 
   &-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    &-right {
-      display: flex;
+    z-index: 2;
+
+    @include mobile-portrait {
+      margin-bottom: mvh(40);
+    }
+  }
+
+  &-right {
+    display: flex;
+    height: vh(619);
+    z-index: 2;
+
+    @include mobile-portrait {
+      height: auto;
+      justify-content: center;
     }
   }
 
@@ -40,11 +58,13 @@ a {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
 
+    height: fit-content;
+
     transform: rotate(180deg);
     white-space: nowrap;
 
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
+    font-family: 'Syne-Variable', sans-serif;
+    font-weight: bold;
 
     font-size: vw(59);
     line-height: vw(71);
@@ -55,21 +75,35 @@ a {
     color: $pink;
 
     user-select: none;
+
+    @include mobile-portrait {
+      font-size: mvw(27);
+      line-height: mvw(32);
+
+      border-left: 3px solid $pink;
+    }
   }
 
   &-socials {
     display: flex;
     flex-direction: column;
     margin-left: vw(40);
+
+    @include mobile-portrait {
+      margin-left: mvw(20);
+    }
   }
 
   &-image {
-    width: vw(619);
-    height: vw(619);
-  }
+    width: vh(619);
+    height: vh(619);
 
-  &-player-holder {
-    width: vw(619);
+    @include mobile-portrait {
+      width: 100%;
+      height: auto;
+
+      margin-bottom: mvw(30);
+    }
   }
 
   &-logo {
@@ -84,5 +118,17 @@ a {
     width: auto;
 
     pointer-events: none;
+    z-index: 0;
+
+    @include mobile-portrait {
+      $m_height: calc(100% - #{mvh(230)});
+
+      height: $m_height;
+      width: auto;
+
+      top: unset;
+      right: -#{vw(400)};
+      bottom: -#{mvh(100)};
+    }
   }
 }

@@ -1,6 +1,15 @@
 $syne: 'Syne';
 $inter: 'Inter';
 
+$var: 'Syne-Variable';
+
+@font-face {
+  font-family: $var;
+  src: url('/Assets/Fonts/#{$var}.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @font-face {
   font-family: $syne;
   src: url('/Assets/Fonts/#{$syne}-Regular.ttf') format('truetype');

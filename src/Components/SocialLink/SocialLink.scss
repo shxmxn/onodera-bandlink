@@ -5,6 +5,10 @@
 
     margin-bottom: vh(40);
 
+    @include mobile-portrait {
+        margin-bottom: mvh(20);
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -13,10 +17,21 @@
         width: vw(62);
         height: vw(62);
         margin-right: vw(20);
+
+        @include mobile-portrait {
+            width: mvw(31.5);
+            height: mvw(31.5);
+            margin-right: mvh(10);
+        }
     }
 
     &-label {
         font-size: vw(50);
         line-height: vw(61);
+
+        @include mobile-portrait {
+            font-size: mvw(26);
+            line-height: mvw(31);
+        }
     }
 }

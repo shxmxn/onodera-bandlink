@@ -10,6 +10,12 @@
         font-size: vw(36);
         line-height: vw(44);
         margin-bottom: vh(20);
+
+        @include mobile-portrait {
+            font-size: mvw(14);
+            line-height: mvw(17);
+            margin-bottom: mvh(5);
+        }
     }
 
     &-controls {
@@ -19,6 +25,11 @@
         svg {
             width: vw(69);
             height: vw(50);
+
+            @include mobile-portrait {
+                width: mvw(40);
+                height: auto;
+            }
         }
     }
 
@@ -37,6 +48,17 @@
             width: vw(61);
             height: vw(61);
             margin-left: -#{vw(4)};
+
+            @include mobile-portrait {
+                width: mvw(32.5);
+                height: mvw(32.5);
+                margin-left: -#{mvw(2)};
+            }
+        }
+
+        @include mobile-portrait {
+            width: mvw(50);
+            height: mvw(50);
         }
     }
 }
