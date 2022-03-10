@@ -14,8 +14,8 @@
     }
 
     &-icon {
-        width: vw(62);
-        height: vw(62);
+        width: vh(62);
+        height: vh(62);
         margin-right: vw(20);
 
         @include mobile-portrait {
@@ -26,8 +26,8 @@
     }
 
     &-label {
-        font-size: vw(50);
-        line-height: vw(61);
+        font-size: vh(50);
+        line-height: vh(61);
 
         @include mobile-portrait {
             font-size: mvw(26);
