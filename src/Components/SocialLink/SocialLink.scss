@@ -1,0 +1,22 @@
+@import '/src/styles';
+
+.SocialLink {
+    display: flex;
+
+    margin-bottom: vh(40);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-icon {
+        width: vw(62);
+        height: vw(62);
+        margin-right: vw(20);
+    }
+
+    &-label {
+        font-size: vw(50);
+        line-height: vw(61);
+    }
+}

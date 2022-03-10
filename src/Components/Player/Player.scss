@@ -1,0 +1,42 @@
+@import '/src/styles';
+
+.Player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-label {
+        font-weight: 300;
+        font-size: vw(36);
+        line-height: vw(44);
+        margin-bottom: vh(20);
+    }
+
+    &-controls {
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: vw(69);
+            height: vw(50);
+        }
+    }
+
+    &-circle {
+        width: vw(90);
+        height: vw(90);
+
+        border-radius: 50%;
+        background-color: $pink;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: vw(61);
+            height: vw(61);
+            margin-left: -#{vw(4)};
+        }
+    }
+}

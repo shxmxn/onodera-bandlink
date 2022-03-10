@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+@function vw($px) {
+  @return #{math.div($px * 100, 1728)}vw;
+}
+
+@function mvw($px) {
+  @return #{math.div($px * 100, 390)}vw;
+}
+
+@function vh($px) {
+  @return #{math.div($px * 100, 1117)}vh;
+}
+
+@function mvh($px) {
+  @return #{math.div($px * 100, 844)}vh;
+}

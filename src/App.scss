@@ -1,0 +1,88 @@
+@import 'styles';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  padding: vh(140) vw(290) vh(130) vw(155);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-right {
+      display: flex;
+    }
+  }
+
+  &-vertical {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+    white-space: nowrap;
+
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+
+    font-size: vw(59);
+    line-height: vw(71);
+
+    padding-left: vw(30);
+
+    border-left: 2px solid $pink;
+    color: $pink;
+
+    user-select: none;
+  }
+
+  &-socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: vw(40);
+  }
+
+  &-image {
+    width: vw(619);
+    height: vw(619);
+  }
+
+  &-player-holder {
+    width: vw(619);
+  }
+
+  &-logo {
+    $height: calc(100% - #{vh(100)});
+
+    position: absolute;
+    right: 0;
+
+    top: vh(50);
+
+    height: $height;
+    width: auto;
+
+    pointer-events: none;
+  }
+}

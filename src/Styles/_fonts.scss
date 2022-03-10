@@ -1,0 +1,95 @@
+$syne: 'Syne';
+$inter: 'Inter';
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$syne}-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$syne}-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$syne}-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$syne}-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$syne}-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $syne;
+  src: url('/Assets/Fonts/#{$inter}-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
