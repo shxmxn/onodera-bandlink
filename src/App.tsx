@@ -20,24 +20,24 @@ const socialLinks: Array<ISocialLink> = [
     },
     {
         icon: vk,
-        label: 'Oki Doki Rec',
-        url: 'https://vk.com/okidokirec',
+        label: 'DJ MA GILLA',
+        url: 'https://vk.com/dg_ma_gilla',
     },
     {
         icon: inst,
-        label: 'Oki Doki Rec',
-        url: 'https://www.instagram.com/okidokirec/',
+        label: 'DJ MA GILLA',
+        url: 'https://www.instagram.com/damagilladj/',
     },
-    {
-        icon: vk,
-        label: 'Onodera',
-        url: 'https://vk.com/onodera.whaaa',
-    },
-    {
-        icon: inst,
-        label: 'Onodera',
-        url: 'https://www.instagram.com/onodera_whaaa/',
-    },
+    // {
+    //     icon: vk,
+    //     label: 'Onodera',
+    //     url: 'https://vk.com/onodera.whaaa',
+    // },
+    // {
+    //     icon: inst,
+    //     label: 'Onodera',
+    //     url: 'https://www.instagram.com/onodera_whaaa/',
+    // },
 ];
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
                 <Player />
             </div>
             <div className="App-right">
-                <div className="App-vertical">Mirrors// Entourage</div>
+                <div className="App-vertical">WORK WITH GRAND PIANO</div>
                 <div className="App-socials">
                     {socialLinks.map((link, idx) => (
                         <SocialLink {...link} key={idx} />
